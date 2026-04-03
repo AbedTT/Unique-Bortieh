@@ -5,10 +5,61 @@
 
 'use strict';
 
-// ===== NAVBAR =====
+// ===== NAVBAR - RESPONSIVE MOBILE MENU =====
 const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+
+/**
+ * Toggle mobile menu and overlay
+ * Handles hamburger animation and drawer slide-in
+ */
+function toggleMobileMenu() {
+  hamburger.classList.toggle('open');
+  navLinks.classList.toggle('open');
+  navOverlay.classList.toggle('active');
+}
+
+/**
+ * Close mobile menu and overlay
+ * Used when clicking on a link or overlay
+ */
+function closeMobileMenu() {
+  hamburger.classList.remove('open');
+  navLinks.classList.remove('open');
+  navOverlay.classList.remove('active');
+}
+
+// Hamburger button click handler
+hamburger.addEventListener('click', toggleMobileMenu);
+
+// Overlay click handler - close menu when overlay is clicked
+navOverlay.addEventListener('click', closeMobileMenu);
+
+// Close mobile menu when a navigation link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// Close menu on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+    closeMobileMenu();
+  }
+});
+
+// Prevent body scroll when mobile menu is open
+function updateBodyScroll() {
+  if (navLinks.classList.contains('open')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+// Update body scroll on menu toggle
+hamburger.addEventListener('click', updateBodyScroll);
 
 // Scroll handler — sticky + solid nav
 window.addEventListener('scroll', () => {
@@ -23,20 +74,6 @@ window.addEventListener('scroll', () => {
 
   // Update active nav link
   updateActiveNavLink();
-});
-
-// Hamburger toggle
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
-
-// Close mobile nav on link click
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-  });
 });
 
 // ===== SMOOTH SCROLL =====

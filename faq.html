@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - Unique-Bortieh Financial Consult</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
+            <path d="M6 28 C6 28 10 14 18 18 C26 22 30 8 30 8" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <rect x="9" y="20" width="4" height="8" fill="#9E9E9E" rx="1" opacity="0.7"/>
+            <rect x="15" y="16" width="4" height="12" fill="#757575" rx="1" opacity="0.8"/>
+            <rect x="21" y="13" width="4" height="15" fill="#424242" rx="1"/>
+            <path d="M28 8 L32 8 L32 12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">UNIQUE-BORTIEH</span>
+          <span class="logo-sub">FINANCIAL CONSULT</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== FAQ HERO ===== -->
+  <section class="page-hero" id="faq-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content reveal-up">
+        <h1 class="page-hero-title">Frequently Asked Questions</h1>
+        <p class="page-hero-sub">Find answers to common questions about our services and process.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section style="padding: var(--section-pad) 0; background: var(--cream);">
+    <div class="container">
+      <div class="faq-grid" style="max-width: 800px; margin: 0 auto;">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>What qualifications do your financial advisors have?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>All our financial advisors hold industry certifications including CFP (Certified Financial Planner), CFA (Chartered Financial Analyst), or equivalent qualifications. They undergo continuous professional development to stay updated with market trends and regulations.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item reveal-up" style="--delay: 0.1s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How do you charge for your services?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We offer flexible fee structures including fixed fees, hourly rates, and assets under management (AUM) fees. We'll discuss the best option for your situation during your initial consultation to ensure transparency in pricing.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item reveal-up" style="--delay: 0.2s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>What is the minimum investment amount required?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We work with clients at various investment levels. There's no single minimum requirement as it depends on the specific service and your financial goals. We encourage you to contact us for personalized guidance on minimum requirements.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How often will I meet with my financial advisor?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Meeting frequency varies based on your needs and preferences. Typical clients meet with their advisor quarterly, but we can arrange more or fewer meetings based on your circumstances and preferences. We also offer regular portfolio reviews and updates.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item reveal-up" style="--delay: 0.1s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can you help with retirement planning?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! Retirement planning is one of our core services. We help clients estimate retirement needs, optimize savings, maximize retirement benefits, and create strategies for sustainable income throughout retirement.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item reveal-up" style="--delay: 0.2s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>How do you ensure my personal information is secure?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We implement industry-leading security measures including encryption, secure servers, and regular security audits. All client information is handled in compliance with regulatory standards and our comprehensive privacy policy.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="faq-item reveal-up">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>What about tax planning services?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we provide comprehensive tax planning strategies to help minimize your tax liability. Our experts stay current with tax laws and work to optimize your financial strategy for maximum after-tax returns.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="faq-item reveal-up" style="--delay: 0.1s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can you manage my investment portfolio?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we offer comprehensive portfolio management services. We'll work with you to understand your risk tolerance, investment objectives, and time horizon, then develop and manage a diversified portfolio accordingly.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 9 -->
+        <div class="faq-item reveal-up" style="--delay: 0.2s;">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>What should I bring to my first consultation?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Bring documents related to your income, investments, debts, insurance, and any existing financial plans. These help us understand your complete financial picture and provide more personalized recommendations. However, don't worry if you don't have everything—we can help organize it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <h2 class="cta-title">Still Have Questions?</h2>
+        <p class="cta-sub">Get personalized answers from our expert financial consultants.</p>
+        <a href="index.html#contact" class="btn btn-primary btn-lg">
+          <span>Contact Us Today</span>
+          <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
+                <path d="M6 28 C6 28 10 14 18 18 C26 22 30 8 30 8" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <rect x="9" y="20" width="4" height="8" fill="#9E9E9E" rx="1" opacity="0.7"/>
+                <rect x="15" y="16" width="4" height="12" fill="#757575" rx="1" opacity="0.8"/>
+                <rect x="21" y="13" width="4" height="15" fill="#424242" rx="1"/>
+                <path d="M28 8 L32 8 L32 12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">UNIQUE-BORTIEH</span>
+              <span class="logo-sub">FINANCIAL CONSULT</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Empowering financial growth through expert guidance and trusted partnerships.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#industries">Why Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Investment Advisory</a></li>
+            <li><a href="#services">Corporate Finance</a></li>
+            <li><a href="#services">Risk Management</a></li>
+            <li><a href="#services">Wealth Planning</a></li>
+            <li><a href="#services">Tax Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique-Bortieh Financial Consult. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+  <script>
+    // FAQ Toggle Functionality
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle('active');
+      
+      const icon = button.querySelector('i');
+      if (faqItem.classList.contains('active')) {
+        icon.classList.remove('ph-plus');
+        icon.classList.add('ph-minus');
+      } else {
+        icon.classList.remove('ph-minus');
+        icon.classList.add('ph-plus');
+      }
+
+      // Close other open FAQ items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem && item.classList.contains('active')) {
+          item.classList.remove('active');
+          const otherIcon = item.querySelector('i');
+          otherIcon.classList.remove('ph-minus');
+          otherIcon.classList.add('ph-plus');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

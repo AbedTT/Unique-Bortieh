@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog & Insights - Unique-Bortieh Financial Consult</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
+            <path d="M6 28 C6 28 10 14 18 18 C26 22 30 8 30 8" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <rect x="9" y="20" width="4" height="8" fill="#9E9E9E" rx="1" opacity="0.7"/>
+            <rect x="15" y="16" width="4" height="12" fill="#757575" rx="1" opacity="0.8"/>
+            <rect x="21" y="13" width="4" height="15" fill="#424242" rx="1"/>
+            <path d="M28 8 L32 8 L32 12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">UNIQUE-BORTIEH</span>
+          <span class="logo-sub">FINANCIAL CONSULT</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="team.html" class="nav-link">Team</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===== BLOG HERO ===== -->
+  <section class="page-hero" id="blog-hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container">
+      <div class="page-hero-content reveal-up">
+        <h1 class="page-hero-title">Financial Insights & Strategies</h1>
+        <p class="page-hero-sub">Expert analysis, market trends, and practical advice to grow your wealth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG GRID ===== -->
+  <section class="section-blog">
+    <div class="container">
+      <div class="blog-grid">
+        
+        <!-- Blog Card 1 -->
+        <article class="blog-card reveal-up">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(46, 125, 50, 0.15));">
+            <i class="ph ph-chart-line-up"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 15, 2024</span>
+              <span class="blog-category">Investment</span>
+            </div>
+            <h3 class="blog-title">Diversification Strategies in 2024</h3>
+            <p class="blog-excerpt">Learn how to build a resilient portfolio with smart diversification across asset classes.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card reveal-up" style="--delay: 0.1s;">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.15), rgba(102, 187, 106, 0.1));">
+            <i class="ph ph-piggy-bank"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 12, 2024</span>
+              <span class="blog-category">Savings</span>
+            </div>
+            <h3 class="blog-title">Emergency Funds: Your Financial Safety Net</h3>
+            <p class="blog-excerpt">Explore the importance of maintaining an adequate emergency fund and best practices.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card reveal-up" style="--delay: 0.2s;">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(46, 125, 50, 0.12));">
+            <i class="ph ph-trophy"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 10, 2024</span>
+              <span class="blog-category">Income</span>
+            </div>
+            <h3 class="blog-title">Passive Income Streams to Accelerate Wealth</h3>
+            <p class="blog-excerpt">Discover multiple passive income opportunities and how to implement them effectively.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article class="blog-card reveal-up">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.15));">
+            <i class="ph ph-debt"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 08, 2024</span>
+              <span class="blog-category">Debt Management</span>
+            </div>
+            <h3 class="blog-title">Smart Debt Payoff Strategies</h3>
+            <p class="blog-excerpt">Master different debt elimination methods and choose the one that works for your situation.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article class="blog-card reveal-up" style="--delay: 0.1s;">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(102, 187, 106, 0.12));">
+            <i class="ph ph-graduation-cap"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 05, 2024</span>
+              <span class="blog-category">Education</span>
+            </div>
+            <h3 class="blog-title">Understanding Retirement Planning Fundamentals</h3>
+            <p class="blog-excerpt">A comprehensive guide to planning for retirement and maximizing your nest egg.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article class="blog-card reveal-up" style="--delay: 0.2s;">
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(46, 125, 50, 0.12), rgba(76, 175, 80, 0.1));">
+            <i class="ph ph-currency-dollar"></i>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date">Mar 01, 2024</span>
+              <span class="blog-category">Budgeting</span>
+            </div>
+            <h3 class="blog-title">Mastering the 50/30/20 Budget Rule</h3>
+            <p class="blog-excerpt">Learn how to allocate your income effectively using the proven 50/30/20 budgeting method.</p>
+            <a href="#" class="blog-link">
+              <span>Read More</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta-content reveal-up">
+        <h2 class="cta-title">Ready to Take Control of Your Finances?</h2>
+        <p class="cta-sub">Get personalized financial strategies from our expert consultants.</p>
+        <a href="index.html#contact" class="btn btn-primary btn-lg">
+          <span>Schedule Consultation</span>
+          <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
+                <path d="M6 28 C6 28 10 14 18 18 C26 22 30 8 30 8" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <rect x="9" y="20" width="4" height="8" fill="#9E9E9E" rx="1" opacity="0.7"/>
+                <rect x="15" y="16" width="4" height="12" fill="#757575" rx="1" opacity="0.8"/>
+                <rect x="21" y="13" width="4" height="15" fill="#424242" rx="1"/>
+                <path d="M28 8 L32 8 L32 12" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">UNIQUE-BORTIEH</span>
+              <span class="logo-sub">FINANCIAL CONSULT</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Empowering financial growth through expert guidance and trusted partnerships.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#industries">Why Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Investment Advisory</a></li>
+            <li><a href="#services">Corporate Finance</a></li>
+            <li><a href="#services">Risk Management</a></li>
+            <li><a href="#services">Wealth Planning</a></li>
+            <li><a href="#services">Tax Strategy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="blog.html">Blog & Insights</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unique-Bortieh Financial Consult. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
