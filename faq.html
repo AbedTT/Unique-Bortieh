@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com https://unpkg.com; img-src 'self' data:; form-action 'self'; base-uri 'self'; object-src 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ - Unique-Bortieh Financial Consult</title>
+  <meta name="description" content="Answers to common questions about Unique-Bortieh Financial Consult's services, service packages, fees, confidentiality and how to get started." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" integrity="sha384-6p9AefaqUhEVheRlj1mpAkbngHXy9mbYMrIdcIt4Jlc9lOLIablJq3bBsLOjGwZ7" crossorigin="anonymous" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
@@ -36,18 +41,21 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="index.html#about" class="nav-link">About</a></li>
         <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
         <li><a href="team.html" class="nav-link">Team</a></li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="faq.html" class="nav-link active">FAQ</a></li>
         <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
       </ul>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <div class="nav-overlay" id="navOverlay"></div>
+
+  <main id="main">
 
   <!-- ===== FAQ HERO ===== -->
   <section class="page-hero" id="faq-hero">
@@ -59,7 +67,7 @@
     <div class="container">
       <div class="page-hero-content reveal-up">
         <h1 class="page-hero-title">Frequently Asked Questions</h1>
-        <p class="page-hero-sub">Find answers to common questions about our services and process.</p>
+        <p class="page-hero-sub">Find answers to common questions about our services, packages and process.</p>
       </div>
     </div>
   </section>
@@ -71,100 +79,111 @@
         
         <!-- FAQ Item 1 -->
         <div class="faq-item reveal-up">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>What qualifications do your financial advisors have?</span>
+          <button type="button" class="faq-question">
+            <span>Who are your consultants and what qualifications do they hold?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>All our financial advisors hold industry certifications including CFP (Certified Financial Planner), CFA (Chartered Financial Analyst), or equivalent qualifications. They undergo continuous professional development to stay updated with market trends and regulations.</p>
+            <p>Our team includes Chartered Accountants (ICAG), Chartered Tax Practitioners (CITG), degree holders in procurement, supply chain management and economics, HND holders in Purchasing and Supply, and specialists in other fields. Together they cover statutory audit, financial reporting, tax compliance, procurement and store operations.</p>
           </div>
         </div>
 
         <!-- FAQ Item 2 -->
         <div class="faq-item reveal-up" style="--delay: 0.1s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>How do you charge for your services?</span>
+          <button type="button" class="faq-question">
+            <span>Which organizations do you work with?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>We offer flexible fee structures including fixed fees, hourly rates, and assets under management (AUM) fees. We'll discuss the best option for your situation during your initial consultation to ensure transparency in pricing.</p>
+            <p>We focus on schools and educational institutions, churches and religious organizations, hotels and hospitality businesses, and small and medium-sized enterprises (SMEs) in Accra and the Greater Accra Region.</p>
           </div>
         </div>
 
         <!-- FAQ Item 3 -->
         <div class="faq-item reveal-up" style="--delay: 0.2s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>What is the minimum investment amount required?</span>
+          <button type="button" class="faq-question">
+            <span>What service packages do you offer?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>We work with clients at various investment levels. There's no single minimum requirement as it depends on the specific service and your financial goals. We encourage you to contact us for personalized guidance on minimum requirements.</p>
+            <p>We offer three packages. Starter covers bookkeeping, payroll and management accounts. Business Control adds annual financial statements, risk assessment and internal control. Complete Business Support adds forensic and internal auditing spot-checks, accounting software installation, staff training and ongoing support.</p>
           </div>
         </div>
 
         <!-- FAQ Item 4 -->
         <div class="faq-item reveal-up">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>How often will I meet with my financial advisor?</span>
+          <button type="button" class="faq-question">
+            <span>How are your fees determined?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>Meeting frequency varies based on your needs and preferences. Typical clients meet with their advisor quarterly, but we can arrange more or fewer meetings based on your circumstances and preferences. We also offer regular portfolio reviews and updates.</p>
+            <p>Fees depend on the scale of your operations, transaction volume, number of employees and the package you select. Agreed fees are set out in a formal engagement letter. Contact us for a proposal tailored to your organization.</p>
           </div>
         </div>
 
         <!-- FAQ Item 5 -->
         <div class="faq-item reveal-up" style="--delay: 0.1s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>Can you help with retirement planning?</span>
+          <button type="button" class="faq-question">
+            <span>Can services be provided monthly, quarterly, annually or per project?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>Absolutely! Retirement planning is one of our core services. We help clients estimate retirement needs, optimize savings, maximize retirement benefits, and create strategies for sustainable income throughout retirement.</p>
+            <p>Yes. Our services can be provided on a monthly, quarterly, annual or project basis, depending on the requirements of your organization.</p>
           </div>
         </div>
 
         <!-- FAQ Item 6 -->
         <div class="faq-item reveal-up" style="--delay: 0.2s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>How do you ensure my personal information is secure?</span>
+          <button type="button" class="faq-question">
+            <span>How do you protect against employee theft, petty cash loss and payroll fraud?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>We implement industry-leading security measures including encryption, secure servers, and regular security audits. All client information is handled in compliance with regulatory standards and our comprehensive privacy policy.</p>
+            <p>Our risk and control review evaluates operational and financial risks, cash management controls and internal fraud-prevention mechanisms. Forensic safeguards include targeted reviews of cash handling, inventory management and authorization levels, and our Complete package adds periodic spot-checks and unannounced cash and inventory audits.</p>
           </div>
         </div>
 
         <!-- FAQ Item 7 -->
         <div class="faq-item reveal-up">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>What about tax planning services?</span>
+          <button type="button" class="faq-question">
+            <span>What tax services do you provide?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>Yes, we provide comprehensive tax planning strategies to help minimize your tax liability. Our experts stay current with tax laws and work to optimize your financial strategy for maximum after-tax returns.</p>
+            <p>We handle corporate income tax, Withholding Tax (WHT) and Value Added Tax (VAT), and provide tax planning, GRA audit representation, tax dispute resolution and tax compliance health checks. We also train your staff in tax awareness.</p>
           </div>
         </div>
 
         <!-- FAQ Item 8 -->
         <div class="faq-item reveal-up" style="--delay: 0.1s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>Can you manage my investment portfolio?</span>
+          <button type="button" class="faq-question">
+            <span>Do you install and support accounting software?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>Yes, we offer comprehensive portfolio management services. We'll work with you to understand your risk tolerance, investment objectives, and time horizon, then develop and manage a diversified portfolio accordingly.</p>
+            <p>Yes. We deploy, set up and maintain QuickBooks (Online and Desktop), Tally Prime and local payroll systems. Our Complete package also covers chart of accounts setup and configuration of Sage and Xero, on-site staff training and ongoing technical support.</p>
           </div>
         </div>
 
         <!-- FAQ Item 9 -->
         <div class="faq-item reveal-up" style="--delay: 0.2s;">
-          <button class="faq-question" onclick="toggleFAQ(this)">
-            <span>What should I bring to my first consultation?</span>
+          <button type="button" class="faq-question">
+            <span>How do you keep my financial information confidential?</span>
             <i class="ph ph-plus"></i>
           </button>
           <div class="faq-answer">
-            <p>Bring documents related to your income, investments, debts, insurance, and any existing financial plans. These help us understand your complete financial picture and provide more personalized recommendations. However, don't worry if you don't have everything—we can help organize it.</p>
+            <p>Our data handling protocols conform to the Ghana Data Protection Act, 2012 (Act 843). All personnel sign strict Non-Disclosure Agreements, and physical files are kept under lock and dual-key security at our office.</p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 10 -->
+        <div class="faq-item reveal-up">
+          <button type="button" class="faq-question">
+            <span>How do we get started?</span>
+            <i class="ph ph-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We begin with an introductory meeting and a review of your financial records, then diagnose your existing systems and recommend the best-fit package. Once we sign an engagement letter covering scope, service levels, confidentiality and fees, we onboard your team and provide monthly management accounts, quarterly reviews and annual statements. Use the contact form or call us to arrange a meeting.</p>
           </div>
         </div>
 
@@ -177,7 +196,7 @@
     <div class="container">
       <div class="cta-content reveal-up">
         <h2 class="cta-title">Still Have Questions?</h2>
-        <p class="cta-sub">Get personalized answers from our expert financial consultants.</p>
+        <p class="cta-sub">Speak to our team of chartered accountants and tax practitioners.</p>
         <a href="index.html#contact" class="btn btn-primary btn-lg">
           <span>Contact Us Today</span>
           <i class="ph ph-arrow-right"></i>
@@ -186,12 +205,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#home" class="nav-logo">
+          <a href="index.html" class="nav-logo">
             <div class="logo-icon">
               <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
@@ -207,7 +228,7 @@
               <span class="logo-sub">FINANCIAL CONSULT</span>
             </div>
           </a>
-          <p class="footer-tagline">Empowering financial growth through expert guidance and trusted partnerships.</p>
+          <p class="footer-tagline">Practical accounting, taxation and business consultancy for schools, churches, hotels and SMEs in Ghana.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
@@ -219,21 +240,23 @@
         <div class="footer-links-group">
           <h5>Company</h5>
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#industries">Why Us</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#packages">Packages</a></li>
+            <li><a href="index.html#solutions">Sectors We Serve</a></li>
+            <li><a href="index.html#industries">Why Us</a></li>
           </ul>
         </div>
 
         <div class="footer-links-group">
           <h5>Services</h5>
           <ul>
-            <li><a href="#services">Investment Advisory</a></li>
-            <li><a href="#services">Corporate Finance</a></li>
-            <li><a href="#services">Risk Management</a></li>
-            <li><a href="#services">Wealth Planning</a></li>
-            <li><a href="#services">Tax Strategy</a></li>
+            <li><a href="accounting-payroll.html">Accounting &amp; Payroll</a></li>
+            <li><a href="taxation-advisory.html">Taxation &amp; Advisory</a></li>
+            <li><a href="risk-internal-control.html">Risk &amp; Internal Control</a></li>
+            <li><a href="forensic-internal-auditing.html">Forensic &amp; Internal Audit</a></li>
+            <li><a href="accounting-software.html">Accounting Software</a></li>
+            <li><a href="training.html">Training</a></li>
           </ul>
         </div>
 
@@ -241,9 +264,8 @@
           <h5>Explore</h5>
           <ul>
             <li><a href="team.html">Our Team</a></li>
-            <li><a href="blog.html">Blog & Insights</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -253,43 +275,17 @@
         <div class="footer-legal">
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms-of-service.html">Terms of Service</a>
-          <a href="#">Disclaimer</a>
+          <a href="terms-of-service.html#disclaimer">Disclaimer</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ===== BACK TO TOP ===== -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="ph ph-arrow-up"></i>
   </button>
 
   <script src="script.js"></script>
-  <script>
-    // FAQ Toggle Functionality
-    function toggleFAQ(button) {
-      const faqItem = button.parentElement;
-      faqItem.classList.toggle('active');
-      
-      const icon = button.querySelector('i');
-      if (faqItem.classList.contains('active')) {
-        icon.classList.remove('ph-plus');
-        icon.classList.add('ph-minus');
-      } else {
-        icon.classList.remove('ph-minus');
-        icon.classList.add('ph-plus');
-      }
-
-      // Close other open FAQ items
-      document.querySelectorAll('.faq-item').forEach(item => {
-        if (item !== faqItem && item.classList.contains('active')) {
-          item.classList.remove('active');
-          const otherIcon = item.querySelector('i');
-          otherIcon.classList.remove('ph-minus');
-          otherIcon.classList.add('ph-plus');
-        }
-      });
-    }
-  </script>
 </body>
 </html>

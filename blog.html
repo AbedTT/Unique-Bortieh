@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+<!-- Not linked from anywhere on the website. Kept for future use: add a menu link to blog.html to show it again. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com https://unpkg.com; img-src 'self' data:; form-action 'self'; base-uri 'self'; object-src 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog & Insights - Unique-Bortieh Financial Consult</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Blog &amp; Insights - Unique-Bortieh Financial Consult</title>
+  <meta name="description" content="Financial insights and guidance from Unique-Bortieh Financial Consult." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" integrity="sha384-6p9AefaqUhEVheRlj1mpAkbngHXy9mbYMrIdcIt4Jlc9lOLIablJq3bBsLOjGwZ7" crossorigin="anonymous" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
@@ -36,18 +43,21 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="index.html#about" class="nav-link">About</a></li>
         <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
         <li><a href="team.html" class="nav-link">Team</a></li>
-        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="faq.html" class="nav-link">FAQ</a></li>
         <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
       </ul>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <div class="nav-overlay" id="navOverlay"></div>
+
+  <main id="main">
 
   <!-- ===== BLOG HERO ===== -->
   <section class="page-hero" id="blog-hero">
@@ -58,8 +68,8 @@
     </div>
     <div class="container">
       <div class="page-hero-content reveal-up">
-        <h1 class="page-hero-title">Financial Insights & Strategies</h1>
-        <p class="page-hero-sub">Expert analysis, market trends, and practical advice to grow your wealth.</p>
+        <h1 class="page-hero-title">Financial Insights &amp; Guidance</h1>
+        <p class="page-hero-sub">Practical guidance on accounting, tax, payroll and internal control for growing organizations.</p>
       </div>
     </div>
   </section>
@@ -72,17 +82,16 @@
         <!-- Blog Card 1 -->
         <article class="blog-card reveal-up">
           <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(46, 125, 50, 0.15));">
-            <i class="ph ph-chart-line-up"></i>
+            <i class="ph ph-coins"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 15, 2024</span>
-              <span class="blog-category">Investment</span>
+              <span class="blog-category">Internal Control</span>
             </div>
-            <h3 class="blog-title">Diversification Strategies in 2024</h3>
-            <p class="blog-excerpt">Learn how to build a resilient portfolio with smart diversification across asset classes.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">Preventing Petty Cash Loss in Your Organization</h3>
+            <p class="blog-excerpt">Practical cash-handling controls that help schools, churches and small businesses stop small leaks before they grow.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -91,17 +100,16 @@
         <!-- Blog Card 2 -->
         <article class="blog-card reveal-up" style="--delay: 0.1s;">
           <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.15), rgba(102, 187, 106, 0.1));">
-            <i class="ph ph-piggy-bank"></i>
+            <i class="ph ph-users-three"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 12, 2024</span>
-              <span class="blog-category">Savings</span>
+              <span class="blog-category">Payroll</span>
             </div>
-            <h3 class="blog-title">Emergency Funds: Your Financial Safety Net</h3>
-            <p class="blog-excerpt">Explore the importance of maintaining an adequate emergency fund and best practices.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">Payroll Compliance: SSNIT, Tier 2 and PAYE Made Simple</h3>
+            <p class="blog-excerpt">What employers need to compute, deduct and file each month, and how to avoid costly payroll errors.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -110,17 +118,16 @@
         <!-- Blog Card 3 -->
         <article class="blog-card reveal-up" style="--delay: 0.2s;">
           <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(46, 125, 50, 0.12));">
-            <i class="ph ph-trophy"></i>
+            <i class="ph ph-file-text"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 10, 2024</span>
-              <span class="blog-category">Income</span>
+              <span class="blog-category">Taxation</span>
             </div>
-            <h3 class="blog-title">Passive Income Streams to Accelerate Wealth</h3>
-            <p class="blog-excerpt">Discover multiple passive income opportunities and how to implement them effectively.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">VAT, Withholding Tax and Corporate Income Tax: Staying Compliant</h3>
+            <p class="blog-excerpt">A plain-language overview of the taxes most organizations manage, and why regular compliance health checks matter.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -128,18 +135,17 @@
 
         <!-- Blog Card 4 -->
         <article class="blog-card reveal-up">
-          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(46, 125, 50, 0.1), rgba(76, 175, 80, 0.15));">
-            <i class="ph ph-debt"></i>
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(46, 125, 50, 0.15));">
+            <i class="ph ph-magnifying-glass"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 08, 2024</span>
-              <span class="blog-category">Debt Management</span>
+              <span class="blog-category">Risk &amp; Fraud</span>
             </div>
-            <h3 class="blog-title">Smart Debt Payoff Strategies</h3>
-            <p class="blog-excerpt">Master different debt elimination methods and choose the one that works for your situation.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">Warning Signs of Employee Theft and Payroll Fraud</h3>
+            <p class="blog-excerpt">The red flags in cash, stock and payroll records that point to internal loss, and what to do about them.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -147,18 +153,17 @@
 
         <!-- Blog Card 5 -->
         <article class="blog-card reveal-up" style="--delay: 0.1s;">
-          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(102, 187, 106, 0.12));">
-            <i class="ph ph-graduation-cap"></i>
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.15), rgba(102, 187, 106, 0.1));">
+            <i class="ph ph-desktop"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 05, 2024</span>
-              <span class="blog-category">Education</span>
+              <span class="blog-category">Software</span>
             </div>
-            <h3 class="blog-title">Understanding Retirement Planning Fundamentals</h3>
-            <p class="blog-excerpt">A comprehensive guide to planning for retirement and maximizing your nest egg.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">Why Your Organization Needs Modern Accounting Software</h3>
+            <p class="blog-excerpt">How tools such as QuickBooks and Tally Prime improve accuracy, speed and transparency in your books.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -166,18 +171,17 @@
 
         <!-- Blog Card 6 -->
         <article class="blog-card reveal-up" style="--delay: 0.2s;">
-          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(46, 125, 50, 0.12), rgba(76, 175, 80, 0.1));">
-            <i class="ph ph-currency-dollar"></i>
+          <div class="blog-card-img" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(46, 125, 50, 0.12));">
+            <i class="ph ph-church"></i>
           </div>
           <div class="blog-card-content">
             <div class="blog-meta">
-              <span class="blog-date">Mar 01, 2024</span>
-              <span class="blog-category">Budgeting</span>
+              <span class="blog-category">Governance</span>
             </div>
-            <h3 class="blog-title">Mastering the 50/30/20 Budget Rule</h3>
-            <p class="blog-excerpt">Learn how to allocate your income effectively using the proven 50/30/20 budgeting method.</p>
-            <a href="#" class="blog-link">
-              <span>Read More</span>
+            <h3 class="blog-title">Financial Oversight for Churches and Schools: What Finance Committees Should Ask</h3>
+            <p class="blog-excerpt">The reports, procedures and controls that give governing bodies confidence in how funds are managed.</p>
+            <a href="index.html#contact" class="blog-link">
+              <span>Ask Us About This</span>
               <i class="ph ph-arrow-right"></i>
             </a>
           </div>
@@ -191,8 +195,8 @@
   <section class="section-cta">
     <div class="container">
       <div class="cta-content reveal-up">
-        <h2 class="cta-title">Ready to Take Control of Your Finances?</h2>
-        <p class="cta-sub">Get personalized financial strategies from our expert consultants.</p>
+        <h2 class="cta-title">Ready to Strengthen Your Organization's Finances?</h2>
+        <p class="cta-sub">Get practical accounting, tax and internal control support from our team.</p>
         <a href="index.html#contact" class="btn btn-primary btn-lg">
           <span>Schedule Consultation</span>
           <i class="ph ph-arrow-right"></i>
@@ -201,12 +205,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#home" class="nav-logo">
+          <a href="index.html" class="nav-logo">
             <div class="logo-icon">
               <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
@@ -222,7 +228,7 @@
               <span class="logo-sub">FINANCIAL CONSULT</span>
             </div>
           </a>
-          <p class="footer-tagline">Empowering financial growth through expert guidance and trusted partnerships.</p>
+          <p class="footer-tagline">Practical accounting, taxation and business consultancy for schools, churches, hotels and SMEs in Ghana.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
@@ -234,21 +240,23 @@
         <div class="footer-links-group">
           <h5>Company</h5>
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#industries">Why Us</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#packages">Packages</a></li>
+            <li><a href="index.html#solutions">Sectors We Serve</a></li>
+            <li><a href="index.html#industries">Why Us</a></li>
           </ul>
         </div>
 
         <div class="footer-links-group">
           <h5>Services</h5>
           <ul>
-            <li><a href="#services">Investment Advisory</a></li>
-            <li><a href="#services">Corporate Finance</a></li>
-            <li><a href="#services">Risk Management</a></li>
-            <li><a href="#services">Wealth Planning</a></li>
-            <li><a href="#services">Tax Strategy</a></li>
+            <li><a href="accounting-payroll.html">Accounting &amp; Payroll</a></li>
+            <li><a href="taxation-advisory.html">Taxation &amp; Advisory</a></li>
+            <li><a href="risk-internal-control.html">Risk &amp; Internal Control</a></li>
+            <li><a href="forensic-internal-auditing.html">Forensic &amp; Internal Audit</a></li>
+            <li><a href="accounting-software.html">Accounting Software</a></li>
+            <li><a href="training.html">Training</a></li>
           </ul>
         </div>
 
@@ -256,9 +264,8 @@
           <h5>Explore</h5>
           <ul>
             <li><a href="team.html">Our Team</a></li>
-            <li><a href="blog.html">Blog & Insights</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -268,14 +275,14 @@
         <div class="footer-legal">
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms-of-service.html">Terms of Service</a>
-          <a href="#">Disclaimer</a>
+          <a href="terms-of-service.html#disclaimer">Disclaimer</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ===== BACK TO TOP ===== -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="ph ph-arrow-up"></i>
   </button>
 

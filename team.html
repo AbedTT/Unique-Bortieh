@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src https://fonts.gstatic.com https://unpkg.com; img-src 'self' data:; form-action 'self'; base-uri 'self'; object-src 'none'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Team - Unique-Bortieh Financial Consult</title>
+  <meta name="description" content="Meet the chartered accountants, tax practitioners and specialists of Unique-Bortieh Financial Consult in Accra, Ghana." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" integrity="sha384-6p9AefaqUhEVheRlj1mpAkbngHXy9mbYMrIdcIt4Jlc9lOLIablJq3bBsLOjGwZ7" crossorigin="anonymous" />
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="navbar" id="navbar">
@@ -36,18 +41,21 @@
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li><a href="index.html#about" class="nav-link">About</a></li>
         <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#packages" class="nav-link">Packages</a></li>
         <li><a href="team.html" class="nav-link active">Team</a></li>
-        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="faq.html" class="nav-link">FAQ</a></li>
         <li><a href="index.html#contact" class="nav-link nav-cta">Contact</a></li>
       </ul>
 
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button type="button" class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <div class="nav-overlay" id="navOverlay"></div>
+
+  <main id="main">
 
   <!-- ===== TEAM HERO ===== -->
   <section class="page-hero" id="team-hero">
@@ -59,7 +67,7 @@
     <div class="container">
       <div class="page-hero-content reveal-up">
         <h1 class="page-hero-title">Meet Our Expert Team</h1>
-        <p class="page-hero-sub">Experienced financial professionals dedicated to your success.</p>
+        <p class="page-hero-sub">Chartered accountants, tax practitioners and specialists dedicated to your organization's success.</p>
       </div>
     </div>
   </section>
@@ -75,13 +83,9 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">Sarah Johnson</h3>
-            <p class="member-title">Chief Financial Officer & Founder</p>
-            <p class="member-bio">With 15+ years of experience in wealth management and investment strategies, Sarah leads our team with visionary financial planning approaches.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">Felix Borteye Bortieh</h3>
+            <p class="member-title">Managing Partner / Business Development</p>
+            <p class="member-bio">Felix is a Chartered Accountant, Chartered Tax Practitioner, and Certified Internal Auditor with over a decade of expertise spanning financial reporting, risk management, statutory auditing, and strategic tax planning. He leads Unique-Bortieh Financial Consult in delivering rigorous governance, compliance, and auditing excellence across public and private sectors.</p>
           </div>
         </div>
 
@@ -91,13 +95,9 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">Michael Chen</h3>
-            <p class="member-title">Senior Investment Strategist</p>
-            <p class="member-bio">Michael specializes in portfolio optimization and market analysis with a proven track record of delivering exceptional returns to clients.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">Ezekiel Nibenong Seudib</h3>
+            <p class="member-title">Tax Manager</p>
+            <p class="member-bio">Ezekiel is a Chartered Accountant (ICAG) and Chartered Tax Practitioner (CITG) holding an MPhil in Accounting and an MSc in Accounting and Finance. Drawing on extensive experience in financial cooperatives and corporate consulting, he oversees strategic tax compliance, SME advisory, and financial risk governance.</p>
           </div>
         </div>
 
@@ -107,13 +107,9 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">Rebecca Williams</h3>
-            <p class="member-title">Tax Planning Specialist</p>
-            <p class="member-bio">Rebecca helps clients minimize tax liabilities through strategic planning and keeps them updated on changing tax regulations.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">Rose Afriyie</h3>
+            <p class="member-title">Management Consultant / Admin</p>
+            <p class="member-bio">Rose is an Economics and Public Administration professional specializing in project coordination, data analytics, and executive office management. Holding a Bachelor’s degree in Economics, she drives operational efficiency, stakeholder engagement, and administrative strategy at Unique-Bortieh Financial Consult.</p>
           </div>
         </div>
 
@@ -123,13 +119,9 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">David Martinez</h3>
-            <p class="member-title">Retirement Planning Expert</p>
-            <p class="member-bio">David guides individuals through retirement preparation with customized plans that ensure financial security for the future.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">Enoch Adjetey</h3>
+            <p class="member-title">Accountant</p>
+            <p class="member-bio">Enoch holds a degree in Purchasing and Supply from Accra Technical University with practical depth in supply chain management, financial tracking, and operational analysis. He manages daily client accounts, inventory records, and financial administration.</p>
           </div>
         </div>
 
@@ -139,13 +131,9 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">Amanda Lee</h3>
-            <p class="member-title">Business Finance Consultant</p>
-            <p class="member-bio">Amanda partners with entrepreneurs and businesses to optimize financial operations and achieve sustainable growth.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">Enoch Afotey Odai</h3>
+            <p class="member-title">Audit Manager</p>
+            <p class="member-bio">Enoch is a Chartered Accountant and Chartered Tax Practitioner certified by the ICAG and CITG. He holds an MBA in Finance. Enoch brings extensive expertise in financial auditing, internal controls, and regulatory compliance to direct the firm's audit services.</p>
           </div>
         </div>
 
@@ -155,13 +143,103 @@
             <i class="ph ph-user-circle"></i>
           </div>
           <div class="member-content">
-            <h3 class="member-name">James Thompson</h3>
-            <p class="member-title">Estate Planning Attorney</p>
-            <p class="member-bio">James ensures your wealth transfer plans are legally sound and optimized to protect your family's financial future.</p>
-            <div class="member-social">
-              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-              <a href="#"><i class="ph ph-envelope"></i></a>
-            </div>
+            <h3 class="member-name">David Charwetey</h3>
+            <p class="member-title">Bookkeeping Consultant</p>
+            <p class="member-bio">David holds an HND in Purchasing and Supply from Accra Technical University and possesses public-sector background in revenue oversight and store records management. He applies detailed tracking systems to support audit verification and stock compliance.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 7 -->
+        <div class="team-member reveal-up">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #4CAF50, #2E7D32);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Caleb Okpoti</h3>
+            <p class="member-title">Payroll Consultant</p>
+            <p class="member-bio">Caleb holds a degree in Procurement and Supply Chain Management from Accra Technical University and brings a strong background in inventory systems, stock control, and corporate storekeeping. He applies precise tracking and administrative methodologies to support the firm’s payroll operations.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 8 -->
+        <div class="team-member reveal-up" style="--delay: 0.1s;">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #66BB6A, #4CAF50);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Mingle Kpakpo Wilmot</h3>
+            <p class="member-title">Procurement Consultant</p>
+            <p class="member-bio">Wilmot holds a BA in Logistics and Supply Management from KNUST and specializes in public procurement compliance, electronic procurement (GHANEPS), and tender evaluations. He leads supplier negotiations, contract management, and cost control strategies to optimize client procurement.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 9 -->
+        <div class="team-member reveal-up" style="--delay: 0.2s;">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #2E7D32, #1B5E20);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Daniel Quaye</h3>
+            <p class="member-title">Field Officer</p>
+          </div>
+        </div>
+
+        <!-- Team Member 10 -->
+        <div class="team-member reveal-up">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #81C784, #66BB6A);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Afotey Abednego Tetteh</h3>
+            <p class="member-title">IT System Consultant</p>
+            <p class="member-bio">Abednego specializes in information technology, full-stack web applications, and network infrastructure, holding certifications from ALX Africa (AI) and the Cisco Networking Academy. He drives digital transformation, software integration, data security, and IT diagnostics to streamline business operations.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 11 -->
+        <div class="team-member reveal-up" style="--delay: 0.1s;">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #4CAF50, #388E3C);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Joseph</h3>
+            <p class="member-title">Internal Audit</p>
+          </div>
+        </div>
+
+        <!-- Team Member 12 -->
+        <div class="team-member reveal-up" style="--delay: 0.2s;">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #66BB6A, #2E7D32);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Fawuzu Bachua</h3>
+            <p class="member-title">Internal Audit Manager</p>
+            <p class="member-bio">Fawuzu is a Chartered Accountant and Chartered Tax Practitioner with an MBA in Finance and robust background at the Ghana Revenue Authority and external audit firms. He spearheads financial decision-making, tax planning, and strategic financial control for clients.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 13 -->
+        <div class="team-member reveal-up">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #4CAF50, #2E7D32);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Josephine Sewah</h3>
+            <p class="member-title">Secretary</p>
+            <p class="member-bio">Josephine brings five years of public-sector administrative management experience to her role as executive support lead. She excels in official correspondence, organizational records management, and high-level client coordination.</p>
+          </div>
+        </div>
+
+        <!-- Team Member 14 -->
+        <div class="team-member reveal-up" style="--delay: 0.1s;">
+          <div class="member-avatar" style="background: linear-gradient(135deg, #66BB6A, #4CAF50);">
+            <i class="ph ph-user-circle"></i>
+          </div>
+          <div class="member-content">
+            <h3 class="member-name">Doh Bless Emmanuel</h3>
+            <p class="member-title">Financial Reporting Consultant</p>
+            <p class="member-bio">Bless is a public-sector financial administrator with specialized experience in cashbook management, tax withholdings (PAYE), SSNIT, and statutory audit support. He leverages financial analytics and data reporting tools to deliver transparent financial statements.</p>
           </div>
         </div>
 
@@ -176,21 +254,31 @@
         <h2 class="section-heading">Our Core Values</h2>
         <p class="section-sub">What drives us to deliver exceptional financial services every day.</p>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-        <div class="reveal-up" style="text-align: center; padding: 2rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 1.5rem;">
+        <div class="reveal-up" style="text-align: center; padding: 1.5rem;">
           <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-handshake"></i></div>
           <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Integrity</h3>
-          <p style="color: var(--text-secondary);">We conduct all business with transparency and honesty, putting your interests first.</p>
+          <p style="color: var(--text-secondary);">Upholding uncompromising moral principles and ethical practices in all financial reporting.</p>
         </div>
-        <div class="reveal-up" style="text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-lightbulb"></i></div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Innovation</h3>
-          <p style="color: var(--text-secondary);">We continuously evolve our strategies to adapt to changing market conditions.</p>
+        <div class="reveal-up" style="text-align: center; padding: 1.5rem; --delay: 0.1s;">
+          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-medal"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Professionalism</h3>
+          <p style="color: var(--text-secondary);">Executing all engagements with technical mastery, diligence and formal oversight.</p>
         </div>
-        <div class="reveal-up" style="text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-users"></i></div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Partnership</h3>
-          <p style="color: var(--text-secondary);">Your success is our success. We're committed to long-term relationships with our clients.</p>
+        <div class="reveal-up" style="text-align: center; padding: 1.5rem; --delay: 0.2s;">
+          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-lock-key"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Confidentiality</h3>
+          <p style="color: var(--text-secondary);">Enforcing rigorous client data security, non-disclosure protocols and statutory confidentiality.</p>
+        </div>
+        <div class="reveal-up" style="text-align: center; padding: 1.5rem; --delay: 0.3s;">
+          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-target"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Accuracy &amp; Timeliness</h3>
+          <p style="color: var(--text-secondary);">Delivering precision-driven bookkeeping, tax filings and forensic audit reports.</p>
+        </div>
+        <div class="reveal-up" style="text-align: center; padding: 1.5rem; --delay: 0.4s;">
+          <div style="font-size: 3rem; color: var(--green); margin-bottom: 1rem;"><i class="ph ph-coins"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Value for Money</h3>
+          <p style="color: var(--text-secondary);">Ensuring every client receives tangible, cost-effective and actionable financial improvements.</p>
         </div>
       </div>
     </div>
@@ -201,7 +289,7 @@
     <div class="container">
       <div class="cta-content reveal-up">
         <h2 class="cta-title">Work With Our Expert Team</h2>
-        <p class="cta-sub">Experience personalized financial guidance from seasoned professionals.</p>
+        <p class="cta-sub">Practical accounting, tax and business consultancy from a multidisciplinary professional team.</p>
         <a href="index.html#contact" class="btn btn-primary btn-lg">
           <span>Schedule Consultation</span>
           <i class="ph ph-arrow-right"></i>
@@ -210,12 +298,14 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#home" class="nav-logo">
+          <a href="index.html" class="nav-logo">
             <div class="logo-icon">
               <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="18" cy="18" r="17" stroke="#4CAF50" stroke-width="2" fill="none" opacity="0.3"/>
@@ -231,7 +321,7 @@
               <span class="logo-sub">FINANCIAL CONSULT</span>
             </div>
           </a>
-          <p class="footer-tagline">Empowering financial growth through expert guidance and trusted partnerships.</p>
+          <p class="footer-tagline">Practical accounting, taxation and business consultancy for schools, churches, hotels and SMEs in Ghana.</p>
           <div class="social-links">
             <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
             <a href="#" class="social-link" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
@@ -243,21 +333,23 @@
         <div class="footer-links-group">
           <h5>Company</h5>
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#industries">Why Us</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#packages">Packages</a></li>
+            <li><a href="index.html#solutions">Sectors We Serve</a></li>
+            <li><a href="index.html#industries">Why Us</a></li>
           </ul>
         </div>
 
         <div class="footer-links-group">
           <h5>Services</h5>
           <ul>
-            <li><a href="#services">Investment Advisory</a></li>
-            <li><a href="#services">Corporate Finance</a></li>
-            <li><a href="#services">Risk Management</a></li>
-            <li><a href="#services">Wealth Planning</a></li>
-            <li><a href="#services">Tax Strategy</a></li>
+            <li><a href="accounting-payroll.html">Accounting &amp; Payroll</a></li>
+            <li><a href="taxation-advisory.html">Taxation &amp; Advisory</a></li>
+            <li><a href="risk-internal-control.html">Risk &amp; Internal Control</a></li>
+            <li><a href="forensic-internal-auditing.html">Forensic &amp; Internal Audit</a></li>
+            <li><a href="accounting-software.html">Accounting Software</a></li>
+            <li><a href="training.html">Training</a></li>
           </ul>
         </div>
 
@@ -265,9 +357,8 @@
           <h5>Explore</h5>
           <ul>
             <li><a href="team.html">Our Team</a></li>
-            <li><a href="blog.html">Blog & Insights</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -277,14 +368,14 @@
         <div class="footer-legal">
           <a href="privacy-policy.html">Privacy Policy</a>
           <a href="terms-of-service.html">Terms of Service</a>
-          <a href="#">Disclaimer</a>
+          <a href="terms-of-service.html#disclaimer">Disclaimer</a>
         </div>
       </div>
     </div>
   </footer>
 
   <!-- ===== BACK TO TOP ===== -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="ph ph-arrow-up"></i>
   </button>
 
